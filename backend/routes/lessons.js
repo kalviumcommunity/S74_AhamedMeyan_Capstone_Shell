@@ -11,7 +11,10 @@ router.get("/module/:moduleId", async (req, res) => {
     .eq("module_id", moduleId)
     .order("lesson_number");
 
-  if (error) return res.status(500).json({ error: error.message });
+  if (error) {
+    console.error("Database error:", error);
+    return res.status(500).json({ error: error.message });
+  }
   res.json(data);
 });
 
