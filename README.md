@@ -34,7 +34,7 @@ Shell is designed to help users learn and master the Linux terminal in a fun, in
 
 ---
 
-## 📅 Capstone Timeline – Day-by-Day Plan*
+## 📅 Capstone Timeline – Day-by-Day Plan
 
 ### Week 1 – Planning & Setup
 - **Day 1-2:** Finalize scope, design wireframes, and plan database schema.
