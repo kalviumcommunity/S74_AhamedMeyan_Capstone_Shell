@@ -6,7 +6,7 @@ dotenv.config();
 dotenv.config();
 
 // Validate required env vars early
-["SUPABASE_URL", "SUPABASE_KEY"].forEach((key) => {
+["SUPABASE_URL", "SUPABASE_ANON_KEY"].forEach((key) => {
   if (!process.env[key]) {
     console.error(`Missing environment variable: ${key}`);
     process.exit(1);
