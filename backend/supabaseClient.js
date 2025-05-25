@@ -3,8 +3,6 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-dotenv.config();
-
 // Validate required env vars early
 ["SUPABASE_URL", "SUPABASE_ANON_KEY"].forEach((key) => {
   if (!process.env[key]) {
