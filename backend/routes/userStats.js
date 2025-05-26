@@ -6,6 +6,10 @@ const router = express.Router();
 // PUT /api/user-stats
 router.put('/', authenticateUser, async (req, res) => {
   const { coins_earned, total_coins, modules_completed, quiz_accuracy, tasks_completed, hints_used, score } = req.body;
+  
+  if (req.body && Object.keys(req.body).length === 0) {
+    return res.status(400).json({ error: "Request body is empty" });
+  }
 
   const { data, error } = await supabase
     .from('user_stats')
