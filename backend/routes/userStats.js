@@ -25,6 +25,8 @@ router.put('/', authenticateUser, async (req, res) => {
 
   if (!data || data.length === 0) return res.status(404).json({ error: "User stats not found" });
 
+  if (!data || data.length === 0) return res.status(404).json({ error: "User stats not found" });
+
   res.json(data[0]);
 });
 
