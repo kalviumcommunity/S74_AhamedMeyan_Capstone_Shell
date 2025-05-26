@@ -23,6 +23,8 @@ router.put('/', authenticateUser, async (req, res) => {
 
   if (error) return res.status(400).json({ error: error.message });
 
+  if (!data || data.length === 0) return res.status(404).json({ error: "User stats not found" });
+
   res.json(data[0]);
 });
 
