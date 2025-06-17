@@ -34,6 +34,9 @@ Shell is designed to help users learn and master the Linux terminal in a fun, in
 
 ---
 
+Deployed Link: [Shell](https://shell-3imd.onrender.com/)
+
+---
 ## 📅 Capstone Timeline – Day-by-Day Plan
 
 ### Week 1 – Planning & Setup
